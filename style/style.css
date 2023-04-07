@@ -617,6 +617,10 @@ section header {
     display: flex;
   }
 
+  .block-screen {
+    overflow: hidden;
+  }
+
   .close-menu {
     position: absolute;
     top: 0;
