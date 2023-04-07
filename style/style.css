@@ -10,13 +10,6 @@
   --secondary-600: #8dd600;
 }
 
-/* * {
-  box-sizing: border-box;
-  border: 1px solid rgba(255, 0, 0, 0.488);
-  overflow: visible !important;
-  opacity: 1 !important;
-} */
-
 html,
 body {
   height: 100%;
