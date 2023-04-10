@@ -1,0 +1,229 @@
+.logo.hc,
+nav.hc a,
+.hero-left.hc .sub-title,
+.hero-left.hc {
+  color: var(--grey-900);
+}
+
+.hero-left.hc h1 {
+  color: #f5662e;
+  margin-bottom: 0.25rem;
+}
+
+.page-header.hc {
+  background-color: white;
+}
+
+.play-button {
+  width: 12rem;
+}
+
+.hero-right.hc {
+  flex-grow: 1;
+}
+
+.hero-right.hc img {
+  width: 100%;
+  margin: 0;
+}
+
+.hero-left.hc {
+  flex-basis: 33.333%;
+  padding-right: 0;
+}
+
+.hero-left.hc .sub-title {
+  margin: 0;
+  font-size: 1.125rem;
+}
+
+.hero-left.hc .sub-title::after {
+  content: '';
+  display: block;
+  height: 0.25rem;
+  width: 5rem;
+  background-color: #8dd600;
+  margin: 2.25rem 0 2.5rem;
+}
+
+.hero-left.hc h2 {
+  font-size: 1rem;
+}
+
+.hero-left.hc p {
+  color: var(--grey-400);
+}
+
+.hc .data-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-right: 33.33%;
+}
+
+.hc .data-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.hero-left.hc a {
+  display: flex;
+  margin-top: 2.5rem;
+  width: fit-content;
+}
+
+.hero-content.hc {
+  gap: 1rem;
+  padding: 5rem 0;
+}
+
+.hc h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+.hc section .container {
+  padding: 7.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hc .concepcao {
+  background-color: #f4faf0;
+}
+
+.hc .concepcao p {
+  width: 58.333%;
+}
+
+.hc section h1 {
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+.hc .funcionalidades .container {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hc .funcionalidades .left {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  flex-basis: 41.67%;
+}
+
+.hc .funcionalidades .right {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  flex-basis: 58.33%;
+  justify-content: center;
+}
+
+.hc .funcionalidades .right h2 {
+  font-size: 1.125rem;
+  color: var(--grey-900);
+}
+
+.hc .funcionalidades .right > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hc .funcionalidades .right > div div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+nav.hc .button-md {
+  background-color: var(--secondary-100);
+  border: 1px solid var(--secondary-100);
+}
+
+nav.hc .button-md:hover {
+  background-color: transparent;
+  border-color: var(--primary-800);
+  color: var(--primary-800);
+}
+
+nav.hc a:hover {
+  border-bottom-color: var(--primary-800);
+}
+
+.hero-left.hc a:hover {
+  opacity: 0.7;
+  transition: all 0.2s linear;
+}
+
+@media only screen and (max-width: 1199px) {
+  .hc section .container {
+    padding: 7.5rem 4rem;
+  }
+
+  .hc .funcionalidades .right img {
+    width: 71%;
+  }
+
+  .hc .funcionalidades .container {
+    gap: 4rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hc .data-wrapper {
+    padding-right: 0;
+  }
+
+  .hc .concepcao p {
+    width: 66.66%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .hero-right.hc {
+    display: flex;
+  }
+
+  .hero-content.hc {
+    gap: 3rem;
+    flex-direction: column;
+    padding: 3rem 0;
+  }
+
+  .hero-left.hc {
+    width: 72%;
+  }
+
+  .hero-left .sub-title {
+    padding-right: 0;
+  }
+
+  .hc .concepcao p {
+    width: 100%;
+  }
+
+  .hc section .container {
+    padding: 4rem 3rem;
+  }
+
+  .hc .funcionalidades .container {
+    flex-direction: column-reverse;
+  }
+
+  .hc .funcionalidades img,
+  .hc .funcionalidades .right img {
+    width: 66%;
+  }
+
+  .hc .funcionalidades .right,
+  .hc .funcionalidades .left,
+  .hc .funcionalidades .container {
+    gap: 2rem;
+    align-items: center;
+  }
+}
