@@ -106,7 +106,7 @@ a {
   width: 100%;
   position: fixed;
   transition: all 0.3s ease;
-  z-index: 999;
+  z-index: 9998;
   background-color: rgba(91, 49, 227, 0.85);
   backdrop-filter: blur(0.5rem);
 }
