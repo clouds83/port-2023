@@ -1,0 +1,249 @@
+.logo.guar,
+nav.guar a,
+.hero-left.guar .sub-title,
+.hero-left.guar {
+  color: white;
+}
+
+.hero-left.guar h1 {
+  color: #f3ca77;
+  margin-bottom: 0.25rem;
+}
+
+.page-header.guar {
+  background-color: #2d2d2c;
+}
+
+.play-button {
+  width: 12rem;
+}
+
+.hero-right.guar {
+  flex-grow: 1;
+}
+
+.hero-right.guar img {
+  width: fit-content;
+  margin: 0;
+}
+
+.hero-left.guar {
+  flex-basis: 33.333%;
+  padding-right: 0;
+}
+
+.hero-left.guar .sub-title {
+  margin: 0;
+  font-size: 1.125rem;
+}
+
+.hero-left.guar .sub-title::after {
+  content: '';
+  display: block;
+  height: 0.25rem;
+  width: 5rem;
+  background-color: #f3ca77;
+  margin: 2.25rem 0 2.5rem;
+}
+
+.hero-left.guar h2 {
+  font-size: 1rem;
+}
+
+.hero-left.guar p {
+  color: #ebdbba;
+}
+
+.guar .data-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.guar .data-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.hero-left.guar a {
+  display: flex;
+  margin-top: 2.5rem;
+  width: fit-content;
+}
+
+.hero-left.guar .button-lg {
+  border: 0.125rem solid #f3ca77;
+  color: #f3ca77;
+}
+
+.hero-left.guar .button-lg:hover {
+  color: #2d2d2c;
+  background-color: #f3ca77;
+}
+
+.hero-content.guar {
+  gap: 1rem;
+  padding: 4rem 0 5rem;
+}
+
+.guar h1 {
+  margin: 0;
+}
+
+.guar section .container {
+  padding: 7.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.guar .concepcao {
+  background-color: #f5e9d1;
+}
+
+.guar .concepcao p {
+  width: 58.333%;
+  color: #575744;
+}
+
+.guar section h1 {
+  font-weight: 500;
+  color: #2d2d2c;
+}
+
+.guar .funcionalidades {
+  background-color: #f5f2eb;
+}
+
+.guar .funcionalidades .container {
+  flex-direction: row;
+  gap: 0;
+}
+
+.guar .funcionalidades .guar-sec {
+  margin-left: -2rem;
+  margin-top: 12rem;
+}
+
+.guar .funcionalidades img {
+  width: calc(50% + 1rem);
+  border-radius: 0.5rem;
+}
+
+nav.guar .button-md {
+  background-color: #f3ca77;
+  border: 1px solid #f3ca77;
+  color: #2d2d2c;
+}
+
+nav.guar .button-md:hover {
+  background-color: transparent;
+  border-color: #f3ca77;
+  color: #f3ca77;
+}
+
+nav.guar a:hover {
+  border-bottom-color: #f3ca77;
+}
+
+.hero-left.guar a:hover {
+  opacity: 0.7;
+  transition: all 0.2s linear;
+}
+
+#header-top.guar {
+  background-color: rgba(45, 45, 44, 0.6);
+}
+
+#contato.guar {
+  background-color: #2d2d2c;
+}
+
+#contato.guar .copyright {
+  background-color: #292927;
+}
+
+.guar .contact-icon {
+  background-color: #f3ca77;
+}
+
+.guar .contact-icon path {
+  fill: #2d2d2c;
+}
+
+.back_to_top.guar {
+  border: 3px solid #2d2d2c;
+}
+
+.back_to_top.guar path {
+  fill: #2d2d2c;
+}
+
+.back_to_top.guar:hover {
+  background: #f3ca77;
+}
+
+.back_to_top.guar:hover path {
+  fill: #2d2d2c;
+}
+
+.guar .contacts a:hover {
+  color: #f3ca77;
+}
+
+.guar .contacts a:hover .contact-icon {
+  background-color: #f3ca77;
+}
+
+@media only screen and (max-width: 1199px) {
+  .guar section .container {
+    padding: 7.5rem 4rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .guar .data-wrapper {
+    padding-right: 0;
+  }
+
+  .guar .concepcao p {
+    width: 66.66%;
+  }
+
+  .hero-right.guar img {
+    width: 100%;
+  }
+
+  .hero-content.guar {
+    gap: 2rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .hero-right.guar {
+    display: flex;
+  }
+
+  .hero-content.guar {
+    gap: 3rem;
+    flex-direction: column;
+    padding: 3rem 0;
+  }
+
+  .hero-left.guar {
+    width: 72%;
+  }
+
+  .hero-left .sub-title {
+    padding-right: 0;
+  }
+
+  .guar .concepcao p {
+    width: 100%;
+  }
+
+  .guar section .container {
+    padding: 4rem 3rem;
+  }
+}

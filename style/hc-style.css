@@ -24,6 +24,7 @@ nav.hc a,
 
 .hero-right.hc img {
   width: 100%;
+  max-width: fit-content;
   margin: 0;
 }
 
@@ -162,6 +163,34 @@ nav.hc a:hover {
 
 #header-top.hc {
   background-color: rgba(255, 255, 255, 0.6);
+}
+
+footer.hc {
+  background-color: var(--secondary-200);
+}
+
+.hc .copyright {
+  background-color: #70991a;
+}
+
+.hc .contact-icon {
+  background-color: white;
+}
+
+.hc .contact-icon path {
+  fill: #f5662e;
+}
+
+.hc .contacts a:hover {
+  color: var(--grey-900);
+}
+
+.hc .contacts a:hover .contact-icon {
+  background-color: var(--grey-900);
+}
+
+.hc .contacts a:hover .contact-icon path {
+  fill: white;
 }
 
 @media only screen and (max-width: 1199px) {

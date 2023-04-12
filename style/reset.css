@@ -147,7 +147,8 @@ sup {
 
 img {
   border-style: none;
-  max-width: fit-content;
+  width: fit-content;
+  height: fit-content;
 }
 
 /* Forms
