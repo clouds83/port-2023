@@ -87,15 +87,9 @@ nav.guar a,
   padding: 4rem 0 5rem;
 }
 
-.guar h1 {
-  margin: 0;
-}
-
 .guar section .container {
-  padding: 7.5rem 2rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
 }
 
 .guar .concepcao {
@@ -110,6 +104,10 @@ nav.guar a,
 .guar section h1 {
   font-weight: 500;
   color: #2d2d2c;
+}
+
+.concepcao h1 {
+  margin-bottom: 1.5rem;
 }
 
 .guar .funcionalidades {

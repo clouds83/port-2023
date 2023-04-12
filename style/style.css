@@ -45,7 +45,7 @@ h2 {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   margin-bottom: 0.75rem;
   color: var(--grey-900);
 }
@@ -169,7 +169,7 @@ nav a:hover {
 .hero-content {
   display: flex;
   flex-grow: 1;
-  padding: 2rem 0;
+  padding: 2rem 0 3rem;
 }
 
 .hero-left,
@@ -215,8 +215,8 @@ nav a {
   padding: 0 2.5rem;
   border-radius: 0.375rem;
   font-size: 1.375rem;
-  border: 0.125rem solid var(--secondary-50);
-  color: var(--secondary-50);
+  border: 0.125rem solid var(--secondary-100);
+  color: var(--secondary-100);
   display: flex;
   width: max-content;
   align-items: center;
@@ -224,7 +224,7 @@ nav a {
 }
 
 .button-lg:hover {
-  background-color: var(--secondary-50);
+  background-color: var(--secondary-100);
   color: var(--primary-800);
   transition: all 150ms linear;
 }
@@ -250,7 +250,7 @@ nav a {
 }
 
 section .container {
-  padding: 10rem 2rem;
+  padding: 8rem 2rem;
 }
 
 .about-me {
@@ -334,7 +334,7 @@ footer {
 }
 
 footer .container {
-  padding: 7.5rem 1.5rem;
+  padding: 8rem 2rem;
   display: flex;
   flex-direction: column;
 }

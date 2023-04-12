@@ -76,7 +76,7 @@ nav.hc a,
 
 .hero-content.hc {
   gap: 1rem;
-  padding: 5rem 0;
+  padding: 2rem 0 3rem;
 }
 
 .hc h1 {
@@ -85,7 +85,6 @@ nav.hc a,
 }
 
 .hc section .container {
-  padding: 7.5rem 2rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -167,6 +166,10 @@ nav.hc a:hover {
 
 footer.hc {
   background-color: var(--secondary-200);
+}
+
+footer.hc h1 {
+  margin-bottom: 0.75rem;
 }
 
 .hc .copyright {
