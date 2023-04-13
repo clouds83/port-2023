@@ -197,7 +197,7 @@ nav a {
 }
 
 .hero-left .sub-title {
-  margin: 1.5rem 0 2.5rem;
+  margin: 1rem 0 3rem;
 }
 
 .hero-right {
@@ -629,6 +629,17 @@ section header {
   }
 }
 
+@media only screen and (max-width: 1440px) {
+  html {
+    font-size: 85%;
+  }
+
+  .hero-right img {
+    width: calc(90% + 6rem);
+    margin-right: -6rem;
+  }
+}
+
 @media only screen and (max-width: 1199px) {
   html {
     font-size: 62.5%;
@@ -831,10 +842,6 @@ section header {
   .contacts {
     display: flex;
     flex-direction: column;
-  }
-
-  .hero-left .sub-title {
-    margin: 1rem 0 3rem;
   }
 
   .job h2 {
