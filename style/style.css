@@ -249,7 +249,8 @@ nav a {
   transition: all 150ms linear;
 }
 
-section .container {
+section .container,
+footer .container {
   padding: 8rem 2rem;
 }
 
@@ -334,7 +335,6 @@ footer {
 }
 
 footer .container {
-  padding: 8rem 2rem;
   display: flex;
   flex-direction: column;
 }
@@ -641,9 +641,6 @@ section header {
 }
 
 @media only screen and (max-width: 1199px) {
-  html {
-    font-size: 62.5%;
-  }
   body,
   .copyright,
   .about-me .left div {
@@ -654,7 +651,8 @@ section header {
     padding: 0 4rem;
   }
 
-  section .container {
+  section .container,
+  footer .container {
     padding: 8rem 4rem;
   }
 
@@ -698,7 +696,17 @@ section header {
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 72%;
+  }
+}
+
 @media only screen and (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
   .back_to_top:hover {
     background: white;
   }
@@ -709,6 +717,11 @@ section header {
 
   .about-me .container {
     gap: 2rem;
+  }
+
+  section .container,
+  footer .container {
+    padding: 6rem 4rem;
   }
 }
 
@@ -780,12 +793,13 @@ section header {
     padding: 0 3rem;
   }
 
-  section .container {
+  section .container,
+  footer .container {
     padding: 4rem 3rem;
   }
 
   .hero-content {
-    padding: 4rem 0;
+    padding: 2rem 0 4rem;
   }
 
   .hero-left {

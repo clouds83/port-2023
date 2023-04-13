@@ -81,7 +81,6 @@ nav.hc a,
 
 .hc h1 {
   margin: 0;
-  /* font-size: 3rem; */
 }
 
 .hc section .container {
@@ -197,10 +196,6 @@ footer.hc h1 {
 }
 
 @media only screen and (max-width: 1199px) {
-  .hc section .container {
-    padding: 7.5rem 4rem;
-  }
-
   .hc .funcionalidades .right img {
     width: 71%;
   }
@@ -232,7 +227,7 @@ footer.hc h1 {
   .hero-content.hc {
     gap: 3rem;
     flex-direction: column;
-    padding: 3rem 0;
+    padding: 1rem 0 3rem;
   }
 
   .hero-left.hc {
@@ -245,10 +240,6 @@ footer.hc h1 {
 
   .hc .concepcao p {
     width: 100%;
-  }
-
-  .hc section .container {
-    padding: 4rem 3rem;
   }
 
   .hc .funcionalidades .container {
