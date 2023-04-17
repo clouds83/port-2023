@@ -428,6 +428,7 @@ section header {
 .job h2 {
   padding: 0 0 2rem 2.5rem;
   z-index: 2;
+  font-weight: 500;
 }
 
 .job-img {
@@ -617,8 +618,9 @@ section header {
   border-radius: 0.25rem;
 }
 
-.job.controle-patrimonial h2 {
+.controle-patrimonial:not(:hover) h2 {
   color: #053c66;
+  transition: all 300ms linear;
 }
 
 .controle-patrimonial:hover h2 {
