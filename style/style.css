@@ -74,6 +74,10 @@ p {
   line-height: 1.4;
 }
 
+section p {
+  line-height: 1.8;
+}
+
 a {
   text-decoration: none;
 }
@@ -157,7 +161,9 @@ nav ul.show-menu a {
 }
 
 nav ul.show-menu .button-md {
-  color: var(--primary-800) !important;
+  color: var(--primary-800);
+  background-color: var(--secondary-100);
+  border: 1px solid var(--secondary-100);
 }
 
 nav a:hover {
@@ -192,8 +198,8 @@ nav a {
 }
 
 .hero-left h1 {
-  margin: 0;
-  line-height: 1.2;
+  margin: 0 0 0.5rem;
+  line-height: 1.1;
 }
 
 .hero-left .sub-title {
@@ -393,6 +399,12 @@ section header {
   padding: 1rem;
 }
 
+.jobs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
 .jobs-row {
   display: flex;
   gap: 1.5rem;
@@ -414,7 +426,8 @@ section header {
 }
 
 .job h2 {
-  padding: 0 2rem 2rem;
+  padding: 0 0 2rem 2.5rem;
+  z-index: 2;
 }
 
 .job-img {
@@ -423,10 +436,13 @@ section header {
   flex-grow: 1;
   align-items: center;
   justify-content: center;
-  filter: drop-shadow(2px 2px 4px rgba(56, 29, 174, 0.16));
   z-index: 2;
   width: 100%;
   padding: 0 16%;
+}
+
+.handy-chef .job-img {
+  filter: drop-shadow(2px 2px 4px rgba(33, 61, 7, 0.16));
 }
 
 .job-img img {
@@ -435,7 +451,7 @@ section header {
 
 .handy-chef {
   background-color: #fafef5;
-  border: 1px solid #dfe5d8;
+  border: 1px solid #ebede8;
 }
 
 .handy-chef::after {
@@ -460,6 +476,8 @@ section header {
   right: 0;
   z-index: 0;
   width: 76%;
+
+  display: none;
 }
 
 .hc-burguer {
@@ -469,6 +487,8 @@ section header {
   margin-left: -3rem;
   opacity: 0;
   z-index: 2;
+
+  display: none;
 }
 
 .hc-pizza {
@@ -478,6 +498,8 @@ section header {
   margin-right: -3rem;
   opacity: 0;
   z-index: 2;
+
+  display: none;
 }
 
 .handy-chef:hover {
@@ -517,6 +539,8 @@ section header {
   opacity: 0;
   z-index: 2;
   transition: all 300ms linear;
+
+  display: none;
 }
 
 .gua-leaf-2 {
@@ -527,6 +551,8 @@ section header {
   opacity: 0;
   z-index: 2;
   transition: all 300ms linear;
+
+  display: none;
 }
 
 .gua-leaf-3 {
@@ -537,6 +563,8 @@ section header {
   opacity: 0;
   z-index: 2;
   transition: all 300ms linear;
+
+  display: none;
 }
 
 .guararapes h2 {
@@ -575,6 +603,76 @@ section header {
   position: absolute;
   inset: 0;
   z-index: 998;
+}
+
+.job.controle-patrimonial {
+  background-color: #eef6fb;
+}
+
+.controle-patrimonial {
+  border: 1px solid #deeef8;
+}
+
+.job.controle-patrimonial .job-img img {
+  border-radius: 0.25rem;
+}
+
+.job.controle-patrimonial h2 {
+  color: #053c66;
+}
+
+.controle-patrimonial:hover h2 {
+  color: white;
+  transition: all 300ms linear;
+}
+
+.controle-patrimonial .job-img {
+  filter: drop-shadow(2px 2px 4px rgba(5, 18, 203, 0.16));
+}
+
+.controle-patrimonial:hover::after {
+  opacity: 1;
+  transition: all 300ms linear;
+}
+.controle-patrimonial::after {
+  content: '';
+  inset: 0;
+  background: linear-gradient(180deg, #0195da 0%, #0950a5 100%);
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  transition: all 300ms linear;
+}
+
+.job.weird {
+  background: rgb(79, 79, 79);
+  background: radial-gradient(
+    circle,
+    rgba(79, 79, 79, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.job.weird h2 {
+  color: white;
+}
+
+.weird .job-img {
+  filter: drop-shadow(2px 2px 4px rgba(5, 18, 203, 0.16));
+}
+
+.weird:hover::after {
+  opacity: 1;
+  transition: all 300ms linear;
+}
+.weird::after {
+  content: '';
+  inset: 0;
+  background-color: #ff2c31;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  transition: all 300ms linear;
 }
 
 .button-menu,
@@ -860,5 +958,9 @@ section header {
 
   .job h2 {
     font-size: 1.5rem;
+  }
+
+  .jobs-container > *:nth-child(even) {
+    flex-direction: column-reverse;
   }
 }

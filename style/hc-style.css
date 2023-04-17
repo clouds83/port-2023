@@ -44,7 +44,7 @@ nav.hc a,
   height: 0.25rem;
   width: 5rem;
   background-color: #8dd600;
-  margin: 2.25rem 0 2.5rem;
+  margin: 1.25rem 0 2.5rem;
 }
 
 .hero-left.hc h2 {
@@ -65,7 +65,7 @@ nav.hc a,
 .hc .data-block {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.25rem;
 }
 
 .hero-left.hc a {
@@ -164,31 +164,41 @@ nav.hc a:hover {
 }
 
 footer.hc {
-  background-color: var(--secondary-200);
+  background-color: #f4faf0;
+}
+
+footer.hc .sub-title {
+  color: var(--grey-900);
 }
 
 footer.hc h1 {
   margin-bottom: 0.75rem;
-}
-
-.hc .copyright {
-  background-color: #70991a;
-}
-
-.hc .contact-icon {
-  background-color: white;
-}
-
-.hc .contact-icon path {
-  fill: #f5662e;
-}
-
-.hc .contacts a:hover {
   color: var(--grey-900);
 }
 
+.hc .copyright {
+  background-color: transparent;
+  color: var(--grey-900);
+}
+
+.hc .contact-icon {
+  background-color: #f5662e;
+}
+
+.hc .contact-icon path {
+  fill: white;
+}
+
+.hc .contacts a {
+  color: var(--grey-900);
+}
+
+.hc .contacts a:hover {
+  color: #f5662e;
+}
+
 .hc .contacts a:hover .contact-icon {
-  background-color: var(--grey-900);
+  background-color: #f5662e;
 }
 
 .hc .contacts a:hover .contact-icon path {

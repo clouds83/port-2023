@@ -1,0 +1,268 @@
+.logo.wrd,
+nav.wrd a,
+.hero-left.wrd .sub-title,
+.hero-left.wrd {
+  color: white;
+}
+
+.page-header.wrd {
+  background-color: black;
+}
+
+.play-button {
+  width: 12rem;
+}
+
+.hero-right.wrd {
+  flex-grow: 1;
+}
+
+.hero-right.wrd img {
+  width: fit-content;
+  margin: 0;
+  filter: drop-shadow(0 0.5rem 10rem rgba(17, 51, 77, 0.24));
+}
+
+.hero-left.wrd {
+  flex-basis: 33.333%;
+  padding-right: 0;
+}
+
+footer.wrd h1 {
+  color: #ff2c31;
+}
+
+.wrd section h1 {
+  color: white;
+}
+
+.hero-left.wrd h1 {
+  margin-bottom: 0.25rem;
+}
+
+.hero-left.wrd .sub-title {
+  margin: 0;
+  font-size: 1.125rem;
+}
+
+.hero-left.wrd .sub-title::after {
+  content: '';
+  display: block;
+  height: 0.25rem;
+  width: 5rem;
+  background-color: white;
+  margin: 1.25rem 0 2.5rem;
+}
+
+.button-menu path {
+  fill: white;
+}
+
+.hero-left.wrd h2 {
+  font-size: 1rem;
+}
+
+.hero-left.wrd p {
+  color: white;
+}
+
+.wrd .data-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.wrd .data-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.hero-left.wrd a {
+  display: flex;
+  width: fit-content;
+}
+
+.hero-left.wrd .button-lg {
+  border: 0.125rem solid #ff2c31;
+  color: #ff2c31;
+}
+
+.hero-left.wrd .button-lg:hover {
+  color: white;
+  background-color: #ff2c31;
+}
+
+.hero-content.wrd {
+  gap: 1rem;
+  padding: 4rem 0 5rem;
+}
+
+.wrd section .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrd .concepcao {
+  background-color: #141414;
+}
+
+.wrd .concepcao p {
+  width: 58.333%;
+  color: white;
+}
+
+.wrd section h1 {
+  font-weight: 500;
+}
+
+.concepcao h1 {
+  margin-bottom: 2rem;
+}
+
+.wrd .funcionalidades {
+  background: rgb(26, 26, 26);
+  background: linear-gradient(
+    90deg,
+    rgba(26, 26, 26, 1) 0%,
+    rgba(10, 10, 10, 1) 100%
+  );
+}
+
+.wrd .funcionalidades .container {
+  justify-content: center;
+}
+
+nav.wrd .button-md {
+  background-color: #ff2c31;
+  border: 1px solid #ff2c31;
+  color: white;
+}
+
+nav.wrd .button-md:hover {
+  background-color: transparent;
+  border-color: #ff2c31;
+  color: #ff2c31;
+}
+
+nav.wrd a:hover {
+  border-bottom-color: white;
+}
+
+.hero-left.wrd a:hover {
+  transition: all 0.2s linear;
+}
+
+#header-top.wrd {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#contato.wrd {
+  background-color: black;
+}
+
+#contato.wrd .copyright {
+  background-color: black;
+}
+
+.wrd .contact-icon {
+  background-color: #141414;
+}
+
+.wrd .contact-icon path {
+  fill: white;
+}
+
+.back_to_top.wrd {
+  border: 3px solid #ff2c31;
+}
+
+.back_to_top.wrd path {
+  fill: #ff2c31;
+}
+
+.back_to_top.wrd:hover {
+  background: #ff2c31;
+}
+
+.back_to_top.wrd:hover path {
+  fill: white;
+}
+
+.wrd .contacts a:hover {
+  color: #ff2c31;
+}
+
+.wrd .contacts a:hover .contact-icon {
+  background-color: #ff2c31;
+}
+
+@media only screen and (max-width: 1199px) {
+  .hero-content.wrd {
+    gap: 2rem;
+  }
+
+  .hero-right.wrd img {
+    width: 100%;
+  }
+
+  .hero-left.wrd h1 {
+    white-space: break-spaces;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .wrd .data-wrapper {
+    padding-right: 0;
+  }
+
+  .wrd .concepcao p {
+    width: 66.66%;
+  }
+
+  .hero-right.wrd img {
+    width: 100%;
+  }
+
+  .hero-content.wrd {
+    gap: 2rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .hero-right.wrd {
+    display: flex;
+  }
+
+  .hero-content.wrd {
+    gap: 3rem;
+    flex-direction: column;
+    padding: 1rem 0 3rem;
+  }
+
+  .hero-left.wrd {
+    width: 72%;
+  }
+
+  .hero-left .sub-title {
+    padding-right: 0;
+  }
+
+  .wrd .concepcao p {
+    width: 100%;
+  }
+
+  .wrd section .container {
+    padding: 4rem 3rem;
+  }
+
+  .wrd .funcionalidades .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .wrd .funcionalidades img {
+    width: 100%;
+  }
+}

@@ -14,14 +14,16 @@
     />
     <link rel="stylesheet" type="text/css" href="style/reset.css" />
     <link rel="stylesheet" type="text/css" href="style/style.css" />
-    <title>Claudio Godoy | Desenvolvedor Front-end</title>
+    <link rel="stylesheet" type="text/css" href="style/wrd-style.css" />
+
+    <title>Weird Wear | Claudio Godoy</title>
   </head>
   <body>
-    <header class="page-header" id="header">
-      <div id="header-top">
+    <header class="page-header wrd" id="header">
+      <div id="header-top" class="wrd">
         <div class="container">
-          <a href="/" class="logo"><span>claudio</span> | front</a>
-          <nav>
+          <a href="/" class="logo wrd"><span>claudio</span> | front</a>
+          <nav class="wrd">
             <a href="#" class="button-md button-menu">
               <svg
                 width="16"
@@ -54,9 +56,10 @@
                   />
                 </svg>
               </a>
-              <li><a href="#portfolio">potfólio</a></li>
-              <li><a href="#sobre-mim">sobre mim</a></li>
-              <li><a href="#raio-x">raio-x</a></li>
+              <li><a href="/">home</a></li>
+              <li><a href="/#portfolio">potfólio</a></li>
+              <li><a href="/#sobre-mim">sobre mim</a></li>
+              <li><a href="/#raio-x">raio-x</a></li>
               <li><a href="#contato">contato</a></li>
               <li>
                 <a
@@ -70,228 +73,60 @@
           </nav>
         </div>
       </div>
+
       <div class="container">
-        <div class="hero-content">
-          <div class="hero-left">
-            <h1>
-              < front-end dev /> <br />
-              & ui designer
-            </h1>
-            <p class="sub-title">
-              Eu projeto e construo sites e produtos digitais
-            </p>
-            <a href="#contato" class="button-lg">contato</a>
+        <div class="hero-content wrd">
+          <div class="hero-left wrd">
+            <h1>Weird</h1>
+            <p class="sub-title">Loja virtual de moda alternativa</p>
+            <div class="data-wrapper">
+              <div class="data-block">
+                <h2>Meu papel</h2>
+                <p>Branding, design e implementação</p>
+              </div>
+
+              <div class="data-block">
+                <h2>Tecnologias</h2>
+                <p>Woocommerce, WordPress</p>
+              </div>
+              <a
+                href="https://weirdwear.shop/"
+                target="_blank"
+                class="button-lg"
+                >visitar projeto</a
+              >
+            </div>
           </div>
-          <div class="hero-right">
-            <img src="img/hero-laptop.svg" alt="" />
+          <div class="hero-right wrd">
+            <img src="img/wrd-hero.png" alt="" />
           </div>
         </div>
       </div>
     </header>
 
-    <main>
-      <section id="portfolio">
+    <main class="wrd">
+      <section class="concepcao">
         <div class="container">
-          <header>
-            <h1>portfólio</h1>
-            <p class="sub-title">Trabalhos de destaque feitos por mim</p>
-          </header>
-
-          <div class="jobs-container">
-            <div class="jobs-row">
-              <div class="job handy-chef">
-                <img src="img/oval.svg" alt="" class="hc-oval" />
-                <img src="img/burguer.svg" alt="" class="hc-burguer" />
-                <img src="img/pizza.svg" alt="" class="hc-pizza" />
-                <div class="job-img">
-                  <ul>
-                    <li><img src="img/hc-1.png" alt="" /></li>
-                    <li><img src="img/hc-2.png" alt="" /></li>
-                    <li><img src="img/hc-3.png" alt="" /></li>
-                  </ul>
-                </div>
-                <h2>Aplicativo de Receitas</h2>
-                <a href="/handy-chef.html"></a>
-              </div>
-
-              <div class="job guararapes">
-                <img src="img/leaf-1.svg" alt="" class="gua-leaf-1" />
-                <img src="img/leaf-2.svg" alt="" class="gua-leaf-2" />
-                <img src="img/leaf-3.svg" alt="" class="gua-leaf-3" />
-
-                <div class="job-img">
-                  <img src="img/gua-1.png" alt="" />
-                </div>
-                <h2>Loja virtual de móveis</h2>
-                <a href="/guararapes.html"></a>
-              </div>
-            </div>
-
-            <div class="jobs-row">
-              <div class="job weird">
-                <div class="job-img">
-                  <img src="img/wrd-s-1.png" alt="" />
-                </div>
-                <h2>Loja de Moda Alternativa</h2>
-                <a href="/weird.html"></a>
-              </div>
-
-              <div class="job controle-patrimonial">
-                <div class="job-img">
-                  <ul>
-                    <li><img src="img/cp-s-1.png" alt="" /></li>
-                    <li><img src="img/cp-s-2.png" alt="" /></li>
-                    <li><img src="img/cp-s-3.png" alt="" /></li>
-                  </ul>
-                </div>
-                <h2>App de Controle Patrimonial</h2>
-                <a href="/controle-patrimonial.html"></a>
-              </div>
-            </div>
-          </div>
+          <h1>visão geral</h1>
+          <p>
+            Trabalho freelance de loja virtual utilizando a plataforma de
+            e-commerce Woocommerce (WordPress). Fui responsável pelo design da
+            página, incluindo toda a identidade visual da marca, como a criação
+            do logotipo. Além disso, também realizei a implementação,
+            customização e configuração completa da loja na plataforma
+            utilizada.
+          </p>
         </div>
       </section>
 
-      <section id="sobre-mim" class="about-me">
+      <section class="funcionalidades">
         <div class="container">
-          <div class="left">
-            <h1 class="mb-48">sobre mim</h1>
-
-            <div>
-              <p>Oi, eu sou Claudio, também conhecido como Clouds.</p>
-              <p>
-                Comecei em 2005 como designer web e desde então tenho projetado
-                e construído sites e produtos digitais profissionalmente.
-              </p>
-              <p>
-                <span>Sou competente em design e código</span> e acredito que
-                nunca estaria completo com apenas uma dessas habilidades.
-              </p>
-              <p>
-                Atualmente, estou me especializando no framework
-                <span>Angular</span> e seu ecossistema, incluindo a plataforma
-                de desenvolvimento mobile híbrida <span>Ionic</span>.
-              </p>
-            </div>
-          </div>
-          <div class="right">
-            <img src="img/avatar.png" alt="" />
-          </div>
-        </div>
-      </section>
-
-      <section id="raio-x">
-        <div class="container">
-          <header>
-            <h1>raio-x</h1>
-            <p class="sub-title">Experiência e conhecimentos</p>
-          </header>
-
-          <div class="xray">
-            <div>
-              <h2>
-                <div class="xray-icon">
-                  <svg
-                    width="20"
-                    height="17"
-                    viewBox="0 0 20 17"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M3.73064 0.893658C3.98058 0.643714 4.31958 0.503296 4.67305 0.503296H15.3353C15.6888 0.503296 16.0277 0.643713 16.2777 0.893658C16.5276 1.1436 16.6681 1.4826 16.6681 1.83607V2.50246H18.6672C19.0207 2.50246 19.3597 2.64288 19.6096 2.89282C19.8596 3.14277 20 3.48177 20 3.83524V5.16802C20 6.05171 19.649 6.8992 19.0241 7.52406C18.3992 8.14892 17.5517 8.49996 16.6681 8.49996H16.3612C16.3014 8.68985 16.2332 8.87728 16.1564 9.06168C15.8186 9.87321 15.3236 10.6099 14.6999 11.2293C14.0762 11.8487 13.3361 12.3386 12.5223 12.6708C11.9292 12.9128 11.3055 13.0676 10.6706 13.1314V15.1639H12.6697C13.0378 15.1639 13.3361 15.4622 13.3361 15.8302C13.3361 16.1983 13.0378 16.4966 12.6697 16.4966H7.33861C6.97057 16.4966 6.67222 16.1983 6.67222 15.8302C6.67222 15.4622 6.97057 15.1639 7.33861 15.1639H9.33778V13.1312C6.65779 12.8602 4.46417 10.9832 3.66497 8.49996H3.33194C2.44826 8.49996 1.60076 8.14892 0.975904 7.52406C0.351043 6.8992 0 6.05171 0 5.16802V3.83524C0 3.48177 0.140417 3.14277 0.390362 2.89282C0.640306 2.64288 0.979303 2.50246 1.33278 2.50246H3.34027V1.83607C3.34027 1.4826 3.48069 1.1436 3.73064 0.893658ZM3.34027 3.83524H1.33278V5.16802C1.33278 5.69823 1.5434 6.20673 1.91832 6.58164C2.29324 6.95656 2.80173 7.16719 3.33194 7.16719H3.38066C3.35397 6.92345 3.34027 6.67607 3.34027 6.42583V3.83524ZM4.8329 7.73836C4.82718 7.6984 4.81792 7.65959 4.80545 7.62225C4.7188 7.23687 4.67305 6.83637 4.67305 6.42583V1.83607L15.3353 1.83607V6.5008C15.3353 6.89569 15.2914 7.28839 15.2051 7.6718C15.2029 7.68052 15.2009 7.68931 15.1991 7.69817C15.1322 7.98842 15.041 8.27323 14.926 8.54953C14.6557 9.19875 14.2597 9.7881 13.7608 10.2836C13.2618 10.7792 12.6697 11.1711 12.0186 11.4368C11.3831 11.6962 10.7035 11.8303 10.0174 11.832C10.013 11.832 10.0086 11.8319 10.0042 11.8319C9.99975 11.8319 9.99534 11.832 9.99094 11.832C9.98315 11.832 9.97535 11.832 9.96755 11.8319C7.48565 11.8132 5.41031 10.0656 4.8329 7.73836ZM16.6347 7.16719H16.6681C17.1983 7.16719 17.7068 6.95656 18.0817 6.58164C18.4566 6.20673 18.6672 5.69823 18.6672 5.16802V3.83524H16.6681V6.5008C16.6681 6.72376 16.6569 6.94616 16.6347 7.16719Z"
-                      fill="white"
-                    />
-                  </svg>
-                </div>
-                Experiência profissional
-              </h2>
-
-              <p>
-                Desde 2005, são 18 anos de experiência profissional divididos
-                em:
-              </p>
-
-              <ul>
-                <li>- 16 anos como Front-end Dev</li>
-                <li>- 9 anos como UI/Visual Designer</li>
-                <li>- 3 anos como UX Designer</li>
-              </ul>
-            </div>
-
-            <div>
-              <h2>
-                <div class="xray-icon">
-                  <svg
-                    width="21"
-                    height="17"
-                    viewBox="0 0 21 17"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M13.6667 1.49813C13.6667 1.17969 13.4198 0.5 12.6698 0.5C12.2329 0.5 11.8301 0.7835 11.7045 1.22438L7.70447 15.2244C7.67821 15.3161 7.66569 15.4085 7.66569 15.4994C7.63853 15.8219 7.91666 16.5 8.66666 16.5C9.10166 16.5 9.50197 16.2138 9.62759 15.7744L13.6276 1.77437C13.6542 1.68156 13.6667 1.58906 13.6667 1.49813ZM6.16666 4.97188C6.16666 4.40063 5.69947 3.97187 5.16666 3.97187C4.91078 3.97187 4.65478 4.06953 4.45978 4.26487L0.959781 7.76487C0.764313 7.9875 0.666656 8.24375 0.666656 8.47188C0.666656 8.7 0.764313 9.0125 0.959625 9.20625L4.45963 12.7063C4.65416 12.9031 4.91041 12.9719 5.16666 12.9719C5.69947 12.9719 6.16666 12.5428 6.16666 11.9719C6.16666 11.716 6.069 11.46 5.87369 11.2647L3.08072 8.47188L5.87384 5.67875C6.06978 5.50938 6.16666 5.25625 6.16666 4.97188ZM20.6667 8.47188C20.6667 8.216 20.569 7.96 20.3737 7.76469L16.8737 4.26469C16.6792 4.09687 16.4229 3.97187 16.1667 3.97187C15.6338 3.97187 15.1667 4.40094 15.1667 4.97188C15.1667 5.22775 15.2643 5.48375 15.4596 5.67906L18.2528 8.47219L15.4596 11.2653C15.2635 11.4875 15.1667 11.7438 15.1667 11.9719C15.1667 12.5431 15.6338 12.9719 16.1667 12.9719C16.4225 12.9719 16.6785 12.8742 16.8735 12.6789L20.3735 9.17887C20.5698 9.0125 20.6667 8.75625 20.6667 8.47188Z"
-                      fill="white"
-                    />
-                  </svg>
-                </div>
-                Desenvolvedor Front-end
-              </h2>
-
-              <p>Telas pixel-perfect, com código limpo e bem estruturado</p>
-
-              <ul>
-                <li>- Angular 2+ / Vue.js / Ionic</li>
-                <li>- Javascript / TypeScript / JSON</li>
-                <li>- HTML5 / CSS3 / SASS / Bootstrap</li>
-                <li>- API's REST / Microfrontend</li>
-                <li>- Testes automatizados / TDD / BDD</li>
-                <li>- Firebase / NoSQL</li>
-                <li>- SEO</li>
-              </ul>
-            </div>
-
-            <div>
-              <h2>
-                <div class="xray-icon">
-                  <svg
-                    width="21"
-                    height="17"
-                    viewBox="0 0 21 17"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M19.65 1.71511L19.696 1.7611C20.2019 2.49697 20.4319 3.37082 20.2939 4.19868C20.2019 5.02654 19.742 5.8084 19.0061 6.36031L5.43843 16.5706L1.89704 16.6165C1.66708 16.6165 1.43712 16.5706 1.20716 16.4326C0.977202 16.3406 0.793234 16.2026 0.655258 15.9727C0.517281 15.7887 0.379305 15.5587 0.333313 15.3288C0.333313 15.0988 0.333313 14.8688 0.425297 14.5929L1.43712 11.2355L15.0048 1.02523C15.7407 0.473322 16.6145 0.289354 17.4424 0.42733C18.3162 0.519314 19.0981 0.979235 19.65 1.71511ZM15.2347 2.9109L17.3044 5.62443L18.0403 5.07253C18.4082 4.79658 18.6382 4.38265 18.6842 3.96872C18.7301 3.55479 18.6382 3.09487 18.3622 2.72693L18.3162 2.68094C18.0403 2.31301 17.6723 2.08304 17.2124 2.03705C16.7985 1.94507 16.3846 2.08304 16.0166 2.31301L15.2347 2.9109ZM16.0166 6.59027L13.947 3.87674L3.8747 11.4654L5.89836 14.179L16.0166 6.59027ZM4.4726 14.9608L2.7249 12.6152L1.98903 15.0068L4.4726 14.9608Z"
-                      fill="white"
-                    />
-                  </svg>
-                </div>
-                Designer visual
-              </h2>
-
-              <p>
-                Expertize em design systems, landing pages e dashboards
-                minimalistas
-              </p>
-
-              <ul>
-                <li>- Figma / Adobe XD</li>
-                <li>- FigJam / Miro</li>
-                <li>- Zeplin / Storybook</li>
-                <li>- Adobe Photoshop</li>
-                <li>- Adobe Illustrator</li>
-                <li>- Papel e lápis</li>
-                <li>- Design minimalista</li>
-              </ul>
-            </div>
-          </div>
+          <img src="img/wrd-1.png" alt="" />
         </div>
       </section>
     </main>
-    <footer id="contato">
+
+    <footer id="contato" class="wrd">
       <div class="container">
         <header>
           <h1>contato</h1>
@@ -403,7 +238,7 @@
         <p>Todos os direitos reservados ® 2023</p>
       </div>
     </footer>
-    <a href="#header" class="back_to_top" title="">
+    <a href="#header" class="back_to_top wrd" title="">
       <svg
         width="19"
         height="15"
