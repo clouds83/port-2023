@@ -28,18 +28,8 @@ nav.cp a,
   padding-right: 0;
 }
 
-.hero-left.cp .sub-title {
-  margin: 0;
-  font-size: 1.125rem;
-}
-
 .hero-left.cp .sub-title::after {
-  content: '';
-  display: block;
-  height: 0.25rem;
-  width: 5rem;
   background-color: white;
-  margin: 1.25rem 0 2.5rem;
 }
 
 .hero-left.cp h2 {
@@ -86,6 +76,7 @@ nav.cp a,
 .cp section .container {
   display: flex;
   flex-direction: column;
+  gap: 1.5rem;
 }
 
 .cp .concepcao {
@@ -94,16 +85,11 @@ nav.cp a,
 
 .cp .concepcao p {
   width: 58.333%;
-  color: #575744;
-}
-
-.cp section h1 {
-  font-weight: 500;
   color: #293847;
 }
 
-.concepcao h1 {
-  margin-bottom: 2rem;
+.cp section h1 {
+  color: #293847;
 }
 
 .cp .funcionalidades .container {
@@ -144,10 +130,6 @@ nav.cp a:hover {
 
 #contato.cp {
   background-color: #0576cb;
-}
-
-#contato.cp .copyright {
-  background-color: transparent;
 }
 
 .cp .contact-icon {
@@ -222,7 +204,7 @@ nav.cp a:hover {
   .hero-content.cp {
     gap: 3rem;
     flex-direction: column;
-    padding: 1rem 0 3rem;
+    padding: 3rem 0 5rem;
   }
 
   .hero-left.cp {
@@ -237,17 +219,17 @@ nav.cp a:hover {
     width: 100%;
   }
 
-  .cp section .container {
-    padding: 4rem 3rem;
-  }
-
   .cp .funcionalidades .container {
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
   }
 
   .cp .funcionalidades img {
-    width: 50%;
+    width: 66%;
+  }
+
+  .cp .button-menu path {
+    fill: #293847;
   }
 }

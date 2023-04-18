@@ -7,7 +7,6 @@ nav.guar a,
 
 .hero-left.guar h1 {
   color: #f3ca77;
-  margin-bottom: 0.25rem;
 }
 
 .page-header.guar {
@@ -32,18 +31,8 @@ nav.guar a,
   padding-right: 0;
 }
 
-.hero-left.guar .sub-title {
-  margin: 0;
-  font-size: 1.125rem;
-}
-
 .hero-left.guar .sub-title::after {
-  content: '';
-  display: block;
-  height: 0.25rem;
-  width: 5rem;
   background-color: #f3ca77;
-  margin: 1.25rem 0 2.5rem;
 }
 
 .hero-left.guar h2 {
@@ -90,6 +79,7 @@ nav.guar a,
 .guar section .container {
   display: flex;
   flex-direction: column;
+  gap: 1.5rem;
 }
 
 .guar .concepcao {
@@ -102,12 +92,7 @@ nav.guar a,
 }
 
 .guar section h1 {
-  font-weight: 500;
   color: #2d2d2c;
-}
-
-.concepcao h1 {
-  margin-bottom: 2rem;
 }
 
 .guar .funcionalidades {
@@ -157,10 +142,6 @@ nav.guar a:hover {
 
 #contato.guar {
   background-color: #2d2d2c;
-}
-
-#contato.guar .copyright {
-  background-color: #292927;
 }
 
 .guar .contact-icon {
@@ -224,7 +205,7 @@ nav.guar a:hover {
   .hero-content.guar {
     gap: 3rem;
     flex-direction: column;
-    padding: 3rem 0;
+    padding: 3rem 0 5rem;
   }
 
   .hero-left.guar {
@@ -239,7 +220,7 @@ nav.guar a:hover {
     width: 100%;
   }
 
-  .guar section .container {
-    padding: 4rem 3rem;
+  .guar .button-menu path {
+    fill: #2d2d2c;
   }
 }
