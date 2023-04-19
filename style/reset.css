@@ -146,6 +146,7 @@ sup {
    */
 
 img {
+  box-sizing: border-box;
   border-style: none;
   width: fit-content;
   height: fit-content;
