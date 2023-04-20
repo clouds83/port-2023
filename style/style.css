@@ -47,7 +47,6 @@ h2 {
 }
 
 h1 {
-  font-size: 3rem;
   color: var(--primary-700);
 }
 
@@ -56,7 +55,7 @@ header h1 {
 }
 
 .sub-title {
-  font-size: 1.375rem;
+  font-size: 1.25rem;
 }
 
 .about-me .left h1 {
@@ -204,16 +203,35 @@ nav a:hover {
 
 .hero-left h1,
 .hero-left .sub-title,
-nav a {
+nav a,
+.hero-left .availability {
   color: white;
 }
 
-.home .hero-left h1 {
-  line-height: 1.1;
+.hero-left .sub-title {
+  margin-bottom: 1rem;
 }
 
-.hero-left .sub-title {
-  margin-bottom: 3rem;
+.hero-left .availability {
+  margin-bottom: 2.5rem;
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-left .availability::before {
+  content: '';
+  background-color: var(--secondary-100);
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  display: inline-flex;
+}
+
+.home .hero-left h1 {
+  font-size: 3rem;
+  line-height: 1.1;
 }
 
 .hero-right {
@@ -280,14 +298,13 @@ footer .container {
   flex-direction: row-reverse;
   gap: 4rem;
   align-items: center;
-  max-width: 72rem;
+  max-width: 60rem;
 }
 
 .about-me .left div {
-  font-size: 1.25rem;
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 1rem;
 }
 
 .about-me .left span {
@@ -296,7 +313,7 @@ footer .container {
 }
 
 .about-me .right img {
-  max-width: 20rem;
+  max-width: 12rem;
 }
 
 .xray {
@@ -653,8 +670,8 @@ section header {
 
 .back_to_top {
   position: fixed;
-  bottom: 1rem;
-  right: 1rem;
+  bottom: 2rem;
+  right: 2rem;
   z-index: 150;
   width: 45px;
   height: 45px;
@@ -783,6 +800,10 @@ section header {
   html {
     font-size: 72%;
   }
+
+  .about-me .container {
+    max-width: 72rem;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -796,10 +817,6 @@ section header {
 
   .back_to_top:hover path {
     fill: var(--primary-500);
-  }
-
-  .about-me .container {
-    gap: 2rem;
   }
 
   section .container,
@@ -882,11 +899,11 @@ section header {
 
   section .container,
   footer .container {
-    padding: 5rem 3rem;
+    padding: 6rem 3rem;
   }
 
   .home .hero-content {
-    padding: 3rem 0 5rem;
+    padding: 4rem 0 6rem;
   }
 
   .jobs-container,
@@ -925,7 +942,7 @@ section header {
   }
 
   .about-me .container {
-    gap: 1rem;
+    gap: 3rem;
   }
 
   .about-me .right {
@@ -934,7 +951,7 @@ section header {
   }
 
   .about-me .right img {
-    max-width: 40%;
+    max-width: 50%;
   }
 
   .xray {
