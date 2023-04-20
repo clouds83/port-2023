@@ -93,12 +93,14 @@ nav.cp a,
 }
 
 .cp .funcionalidades .container {
+  justify-content: space-between;
   flex-direction: row;
-  gap: 1.5rem;
+  gap: 8rem;
 }
 
 .cp .funcionalidades img {
-  width: calc(33.3333% - 1rem);
+  width: 10%;
+  flex-basis: 100%;
   box-shadow: 0 0.5rem 7.5rem -1.5rem rgba(17, 51, 77, 0.24);
   border-radius: 0.5rem;
 }
@@ -222,7 +224,7 @@ nav.cp a:hover {
   .cp .funcionalidades .container {
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 4rem;
   }
 
   .cp .funcionalidades img {
