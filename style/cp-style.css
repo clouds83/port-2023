@@ -5,6 +5,10 @@ nav.cp a,
   color: white;
 }
 
+nav.cp a.button-sm {
+  color: var(--primary-900);
+}
+
 .page-header.cp {
   background-color: #0576cb;
 }
@@ -56,6 +60,10 @@ nav.cp a,
   display: flex;
   margin-top: 2.5rem;
   width: fit-content;
+}
+
+footer.footer {
+  background-color: #f5f9fc;
 }
 
 .hero-left.cp .button-lg {
@@ -203,6 +211,11 @@ nav.cp a:hover {
     display: flex;
   }
 
+  nav.cp .button-md {
+    background-color: transparent;
+    border-color: transparent;
+  }
+
   .hero-content.cp {
     gap: 3rem;
     flex-direction: column;
@@ -210,11 +223,15 @@ nav.cp a:hover {
   }
 
   .hero-left.cp {
-    width: 72%;
+    width: 100%;
   }
 
   .hero-left .sub-title {
     padding-right: 0;
+  }
+
+  .hero-right {
+    width: 100%;
   }
 
   .cp .concepcao p {
@@ -232,6 +249,6 @@ nav.cp a:hover {
   }
 
   .cp .button-menu path {
-    fill: #293847;
+    fill: white;
   }
 }

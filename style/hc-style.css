@@ -2,7 +2,7 @@
 nav.hc a,
 .hero-left.hc .sub-title,
 .hero-left.hc {
-  color: var(--grey-900);
+  color: var(--primary-900);
 }
 
 .hero-left.hc h1 {
@@ -68,12 +68,6 @@ nav.hc a,
   padding: 2rem 0 3rem;
 }
 
-.hc section .container {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
 .hc .concepcao {
   background-color: #f4faf0;
 }
@@ -119,6 +113,10 @@ nav.hc a,
   gap: 1.5rem;
 }
 
+footer.footer {
+  background-color: #f4faf0;
+}
+
 nav.hc .button-md {
   background-color: var(--secondary-100);
   border: 1px solid var(--secondary-100);
@@ -152,7 +150,7 @@ footer.hc .sub-title {
 }
 
 .hc h1 {
-  color: var(--grey-900);
+  color: var(--primary-900);
 }
 
 .hc .copyright {
@@ -183,7 +181,7 @@ footer.hc .sub-title {
   fill: white;
 }
 
-.back_to_top {
+/* .back_to_top {
   border: 3px solid var(--secondary-200);
 }
 
@@ -193,7 +191,7 @@ footer.hc .sub-title {
 
 .back_to_top:hover {
   background-color: var(--secondary-200);
-}
+} */
 
 @media only screen and (max-width: 1199px) {
   .hc .funcionalidades .right img {
@@ -220,8 +218,20 @@ footer.hc .sub-title {
 }
 
 @media only screen and (max-width: 425px) {
+  .button-menu path {
+    fill: var(--primary-900);
+  }
+
   .hero-right.hc {
     display: flex;
+  }
+
+  nav.hc a {
+    color: white;
+  }
+
+  nav.hc a.button-sm {
+    color: var(--primary-900);
   }
 
   .hero-content.hc {
@@ -231,7 +241,9 @@ footer.hc .sub-title {
   }
 
   .hero-left.hc {
-    width: 72%;
+    width: 66%;
+    align-items: start;
+    margin: initial;
   }
 
   .hero-left .sub-title {

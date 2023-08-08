@@ -5,6 +5,10 @@ nav.wrd a,
   color: white;
 }
 
+nav.wrd a.button-sm {
+  color: var(--primary-900);
+}
+
 .page-header.wrd {
   background-color: black;
 }
@@ -207,6 +211,11 @@ nav.wrd a:hover {
 @media only screen and (max-width: 425px) {
   .hero-right.wrd {
     display: flex;
+  }
+
+  nav.wrd .button-md {
+    border-color: transparent;
+    background-color: transparent;
   }
 
   .hero-content.wrd {

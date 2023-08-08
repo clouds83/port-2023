@@ -5,6 +5,10 @@ nav.guar a,
   color: white;
 }
 
+nav.guar a.button-sm {
+  color: var(--primary-900);
+}
+
 .hero-left.guar h1 {
   color: #f3ca77;
 }
@@ -199,12 +203,18 @@ nav.guar a:hover {
 @media only screen and (max-width: 425px) {
   .hero-right.guar {
     display: flex;
+    width: 100%;
   }
 
   .hero-content.guar {
     gap: 3rem;
     flex-direction: column;
     padding: 3rem 0 5rem;
+  }
+
+  nav.guar .button-md {
+    background: transparent;
+    border-color: transparent;
   }
 
   .hero-left.guar {
@@ -220,6 +230,6 @@ nav.guar a:hover {
   }
 
   .guar .button-menu path {
-    fill: #2d2d2c;
+    fill: white;
   }
 }
