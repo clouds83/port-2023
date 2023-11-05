@@ -9,21 +9,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="style/reset.css" />
     <link rel="stylesheet" type="text/css" href="style/style.css" />
     <link rel="stylesheet" type="text/css" href="style/guar-style.css" />
 
+    <script defer src="/script/scripts.js"></script>
+    <script defer src="/script/fixedHeader.js"></script>
+
     <title>Guararapes | Claudio Godoy</title>
   </head>
-  <body class="case">
-    <header class="page-header guar" id="header">
-      <div id="header-top" class="guar">
+  <body class="case guar">
+    <header class="page-header" id="header">
+      <div id="header-top">
         <div class="container">
-          <a href="/" class="logo guar">claudio | front-end</a>
-          <nav class="guar">
+          <a href="/" class="logo">claudio | front-end</a>
+          <nav>
             <a href="#" class="button-md button-menu">
               <svg
                 viewBox="0 0 16 11"
@@ -55,16 +58,15 @@
                 </svg>
               </a>
               <li><a href="/">Home</a></li>
-              <li><a href="/#portfolio">Portfólio</a></li>
-              <li><a href="/#summary">Resumo</a></li>
-              <li><a href="/#sobre-mim">Diferenciais</a></li>
-              <li><a href="/#contato">Contato</a></li>
+              <li><a href="/#portfolio">Portfolio</a></li>
+              <li><a href="/#summary">Summary</a></li>
+              <li><a href="/#contact">Contact</a></li>
               <li>
                 <a
-                  href="curriculo-claudio-frontend.pdf"
+                  href="claudio-godoy-resume-front-end-developer.pdf"
                   target="_blank"
                   class="button-sm"
-                  >Currículo</a
+                  >Resume</a
                 >
               </li>
             </ul>
@@ -73,44 +75,44 @@
       </div>
 
       <div class="container">
-        <div class="hero-content guar">
-          <div class="hero-left guar">
+        <div class="hero-content">
+          <div class="hero-left">
             <h1>Guararapes</h1>
-            <span class="sub-title">Loja virtual de móveis</span>
+            <span class="sub-title">Furniture e-commerce</span>
             <div class="data-wrapper">
               <div class="data-block">
-                <h2>Meu papel</h2>
-                <p>Desenvolvimento Front-end</p>
+                <h2>My role</h2>
+                <p>Front-end development</p>
               </div>
 
               <div class="data-block">
-                <h2>Tecnologias</h2>
-                <p>Angular, SAP Commerce (Spartacus)</p>
+                <h2>Frameworks</h2>
+                <p>Angular and SAP Commerce (Spartacus)</p>
               </div>
             </div>
             <a
               href="https://casa.guararapes.com.br/"
               target="_blank"
               class="button-lg"
-              >visitar projeto</a
+              >visit the project</a
             >
           </div>
-          <div class="hero-right guar">
+          <div class="hero-right">
             <img src="img/guar-hero.png" alt="" />
           </div>
         </div>
       </div>
     </header>
 
-    <main class="guar">
-      <section class="concepcao">
+    <main>
+      <section class="overview">
         <div class="container">
-          <h1>visão geral</h1>
+          <h1>overview</h1>
           <p>
-            Trabalho freelance de implementação de loja virtual usando a
-            plataforma de e-commerce SAP Commerce. A versão da plataforma usada
-            foi a de codenome Spartacus, que usa o framework Angular para a
-            construção do front.
+            Freelance work for the implementation of an online store using the
+            SAP Commerce e-commerce platform. The platform version used was
+            codenamed Spartacus, which utilizes the Angular framework for
+            front-end development.
           </p>
         </div>
       </section>
@@ -126,14 +128,13 @@
     <footer class="footer">
       <div class="container">
         <div class="upper-footer">
-          <a href="/" class="logo logo--dark">claudio | front-end</a>
+          <a href="/" class="logo">claudio | front-end</a>
           <nav>
-            <ul class="menu menu--dark">
+            <ul class="menu">
               <li><a href="/">Home</a></li>
-              <li><a href="/#portfolio">Portfólio</a></li>
-              <li><a href="/#summary">Resumo</a></li>
-              <li><a href="/#sobre-mim">Diferenciais</a></li>
-              <li><a href="/#contato">Contato</a></li>
+              <li><a href="/#portfolio">Portfolio</a></li>
+              <li><a href="/#summary">Summary</a></li>
+              <li><a href="/#contact">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -142,7 +143,7 @@
         </div>
       </div>
     </footer>
-    <a href="#header" class="back_to_top guar" title="">
+    <a href="#header" class="back_to_top" title="">
       <svg
         width="19"
         height="15"
@@ -156,6 +157,5 @@
         />
       </svg>
     </a>
-    <script src="script.js"></script>
   </body>
 </html>

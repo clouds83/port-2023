@@ -1,50 +1,69 @@
-.logo.guar,
-nav.guar a,
-.hero-left.guar .sub-title,
-.hero-left.guar {
+:root {
+  --hue: 60;
+}
+
+.guar #header-top {
+  background-color: hsla(60, 60%, 8%, 0.8);
+}
+
+.guar .footer {
+  background-color: #4d4d3a;
+}
+
+.guar .page-header {
+  background-color: white;
+}
+
+.guar .page-header,
+.guar main,
+.guar .contact {
+  overflow: visible;
+}
+
+.guar .logo,
+.guar nav a,
+.guar .copyright {
   color: white;
 }
 
-nav.guar a.button-sm {
-  color: var(--primary-900);
+.guar nav a:hover {
+  color: var(--text);
 }
 
-.hero-left.guar h1 {
-  color: #f3ca77;
+.guar nav a:hover:not(.button-sm) {
+  border-bottom-color: var(--text);
 }
 
-.page-header.guar {
-  background-color: #2d2d2c;
+.guar #header-top .button-sm {
+  background-color: white;
+  color: var(--text);
+  border-color: white;
 }
 
 .play-button {
   width: 12rem;
 }
 
-.hero-right.guar {
-  flex-grow: 1;
+.guar .hero-left .sub-title::after {
+  background-color: var(--highlight);
 }
 
-.hero-right.guar img {
+.guar .hero-right img {
   width: fit-content;
   margin: 0;
+  border-radius: 1.25rem;
+  box-shadow: 1rem 1rem 10rem -1rem hsla(var(--hue), 20%, 50%, 0.4);
 }
 
-.hero-left.guar {
-  flex-basis: 33.333%;
-  padding-right: 0;
+.guar .hero-left .button-lg:hover {
+  background-color: var(--highlight);
+  color: var(--subtle);
+  border-color: var(--highlight);
 }
 
-.hero-left.guar .sub-title::after {
-  background-color: #f3ca77;
-}
-
-.hero-left.guar h2 {
+.guar .hero-left h2 {
   font-size: 1rem;
-}
-
-.hero-left.guar p {
-  color: #ebdbba;
+  color: var(--text-highlight);
 }
 
 .guar .data-wrapper {
@@ -59,25 +78,10 @@ nav.guar a.button-sm {
   gap: 0.25rem;
 }
 
-.hero-left.guar a {
+.guar .hero-left a {
   display: flex;
   margin-top: 2.5rem;
   width: fit-content;
-}
-
-.hero-left.guar .button-lg {
-  border: 0.125rem solid #f3ca77;
-  color: #f3ca77;
-}
-
-.hero-left.guar .button-lg:hover {
-  color: #2d2d2c;
-  background-color: #f3ca77;
-}
-
-.hero-content.guar {
-  gap: 1rem;
-  padding: 4rem 0 5rem;
 }
 
 .guar section .container {
@@ -86,21 +90,9 @@ nav.guar a.button-sm {
   gap: 1.5rem;
 }
 
-.guar .concepcao {
-  background-color: #f5e9d1;
-}
-
-.guar .concepcao p {
-  width: 58.333%;
-  color: #575744;
-}
-
-.guar section h1 {
-  color: #2d2d2c;
-}
-
-.guar .funcionalidades {
-  background-color: #f5f2eb;
+.guar .overview {
+  background-color: white;
+  box-shadow: 0 0 10rem 0 hsla(var(--hue), 20%, 50%, 0.1);
 }
 
 .guar .funcionalidades .container {
@@ -116,67 +108,11 @@ nav.guar a.button-sm {
 .guar .funcionalidades img {
   width: calc(50% + 1rem);
   border-radius: 0.5rem;
-  box-shadow: 0px 0.5rem 8rem -1.5rem rgba(45, 45, 44, 0.24);
+  box-shadow: 2rem 3rem 10rem -1rem hsla(var(--hue), 20%, 50%, 0.4);
 }
 
-nav.guar .button-md {
-  background-color: #f3ca77;
-  border: 1px solid #f3ca77;
-  color: #2d2d2c;
-}
-
-nav.guar .button-md:hover {
-  background-color: transparent;
-  border-color: #f3ca77;
-  color: #f3ca77;
-}
-
-nav.guar a:hover {
-  border-bottom-color: #f3ca77;
-}
-
-.hero-left.guar a:hover {
+.guar .hero-left a:hover {
   transition: all 0.2s linear;
-}
-
-#header-top.guar {
-  background-color: rgba(45, 45, 44, 0.6);
-}
-
-#contato.guar {
-  background-color: #2d2d2c;
-}
-
-.guar .contact-icon {
-  background-color: #f3ca77;
-}
-
-.guar .contact-icon path {
-  fill: #2d2d2c;
-}
-
-.back_to_top.guar {
-  border: 3px solid #2d2d2c;
-}
-
-.back_to_top.guar path {
-  fill: #2d2d2c;
-}
-
-.back_to_top.guar:hover {
-  background: #f3ca77;
-}
-
-.back_to_top.guar:hover path {
-  fill: #2d2d2c;
-}
-
-.guar .contacts a:hover {
-  color: #f3ca77;
-}
-
-.guar .contacts a:hover .contact-icon {
-  background-color: #f3ca77;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -187,49 +123,45 @@ nav.guar a:hover {
     padding-right: 0;
   }
 
-  .guar .concepcao p {
-    width: 66.66%;
-  }
-
-  .hero-right.guar img {
+  .guar .hero-right img {
     width: 100%;
-  }
-
-  .hero-content.guar {
-    gap: 2rem;
   }
 }
 
 @media only screen and (max-width: 425px) {
-  .hero-right.guar {
+  .guar .hero-right {
     display: flex;
     width: 100%;
   }
 
-  .hero-content.guar {
-    gap: 3rem;
-    flex-direction: column;
-    padding: 3rem 0 5rem;
-  }
-
-  nav.guar .button-md {
+  .guar nav .button-md {
     background: transparent;
     border-color: transparent;
-  }
-
-  .hero-left.guar {
-    width: 72%;
   }
 
   .hero-left .sub-title {
     padding-right: 0;
   }
 
-  .guar .concepcao p {
-    width: 100%;
-  }
-
   .guar .button-menu path {
     fill: white;
+  }
+
+  nav ul {
+    background-color: hsl(60, 60%, 8%);
+  }
+
+  .guar .funcionalidades .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .guar .funcionalidades img {
+    width: 80%;
+  }
+
+  .guar .funcionalidades .guar-sec {
+    margin: 0;
   }
 }

@@ -9,21 +9,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="style/reset.css" />
     <link rel="stylesheet" type="text/css" href="style/style.css" />
     <link rel="stylesheet" type="text/css" href="style/hc-style.css" />
 
+    <script defer src="/script/scripts.js"></script>
+    <script defer src="/script/fixedHeader.js"></script>
+
     <title>Handy Chef | Claudio Godoy</title>
   </head>
   <body class="case hc">
-    <header class="page-header hc" id="header">
-      <div id="header-top" class="hc">
+    <header class="page-header" id="header">
+      <div id="header-top">
         <div class="container">
-          <a href="/" class="logo hc">claudio | front-end</a>
-          <nav class="hc">
+          <a href="/" class="logo">claudio | front-end</a>
+          <nav>
             <a href="#" class="button-md button-menu">
               <svg
                 viewBox="0 0 16 11"
@@ -58,13 +61,13 @@
               <li><a href="/#portfolio">Portfólio</a></li>
               <li><a href="/#summary">Resumo</a></li>
               <li><a href="/#sobre-mim">Diferenciais</a></li>
-              <li><a href="/#contato">Contato</a></li>
+              <li><a href="/#contact">contact</a></li>
               <li>
                 <a
-                  href="curriculo-claudio-frontend.pdf"
+                  href="claudio-godoy-resume-front-end-developer.pdf"
                   target="_blank"
                   class="button-sm"
-                  >Currículo</a
+                  >Resume</a
                 >
               </li>
             </ul>
@@ -73,21 +76,19 @@
       </div>
 
       <div class="container">
-        <div class="hero-content hc">
-          <div class="hero-left hc">
+        <div class="hero-content">
+          <div class="hero-left">
             <h1>Handy Chef</h1>
-            <span class="sub-title">
-              Armazenamento de receitas e lista de compras
-            </span>
+            <span class="sub-title"> Recipe storage and shopping list </span>
             <div class="data-wrapper">
               <div class="data-block">
-                <h2>Meu papel</h2>
-                <p>Branding, product design e desenvolvimento mobile</p>
+                <h2>My role</h2>
+                <p>Branding, product design and mobile development</p>
               </div>
 
               <div class="data-block">
-                <h2>Tecnologias</h2>
-                <p>Angular e Ionic</p>
+                <h2>Frameworks</h2>
+                <p>Angular and Ionic</p>
               </div>
             </div>
             <a
@@ -95,28 +96,28 @@
               target="_blank"
             >
               <img src="img/play-button.png" alt="" class="play-button" />
+              <!-- TODO translate -->
             </a>
           </div>
-          <div class="hero-right hc">
+          <div class="hero-right">
             <img src="img/hc-hero.png" alt="" />
           </div>
         </div>
       </div>
     </header>
 
-    <main class="hc">
-      <section class="concepcao">
+    <main>
+      <section class="overview">
         <div class="container">
-          <h1>concepção</h1>
+          <h1>conception</h1>
           <p>
-            Amo cozinhar, mas sempre tive dificuldade em manter minhas receitas
-            acessíveis. Testei vários aplicativos, mas nenhum foi bom o
-            suficiente.
+            I love cooking, but I've always had difficulty keeping my recipes
+            accessible. I've tried several apps, but none were good enough.
           </p>
           <p>
-            Decidi então criar meu próprio app de receitas e ainda aprender
-            framework de desenvolvimento mobile. Agora tenho minhas receitas
-            favoritas à mão e adquiri uma nova habilidade.
+            I decided to create my own recipe app and also learn a mobile
+            development framework. Now I have my favorite recipes at hand and
+            acquired a new skill.
           </p>
         </div>
       </section>
@@ -130,23 +131,21 @@
           <div class="right">
             <div>
               <div>
-                <h1>funcionalidades</h1>
+                <h1>features</h1>
                 <p>
-                  Minha ideia era criar um aplicativo simples, permitindo que o
-                  usuário cadastrasse suas receitas da maneira mais fácil
-                  possível. O aplicativo não requer que o usuário crie uma conta
-                  e, exceto pelo nome da receita, todos os outros campos são
-                  opcionais. Você pode criar uma receita com apenas o nome ou
-                  com apenas instruções, se quiser.
+                  My idea was to create a simple app, allowing the user to add
+                  their recipes in the easiest way possible. The app doesn't
+                  require the user to create an account, and except for the
+                  recipe name, all other fields are optional. You can create a
+                  recipe with just the name or just instructions if you prefer.
                 </p>
               </div>
               <div>
-                <h2>lista de compras</h2>
+                <h2>shopping list</h2>
                 <p>
-                  Por enquanto, a única funcionalidade adicional é a lista de
-                  compras. O usuário pode enviar os ingredientes de uma receita
-                  diretamente para a lista e também adicionar manualmente novos
-                  itens na página da lista.
+                  For now, the only additional feature is the shopping list. The
+                  user can send the ingredients from a recipe directly to the
+                  list and also manually add new items on the list page.
                 </p>
               </div>
             </div>
@@ -159,14 +158,14 @@
     <footer class="footer">
       <div class="container">
         <div class="upper-footer">
-          <a href="/" class="logo logo--dark">claudio | front-end</a>
+          <a href="/" class="logo">claudio | front-end</a>
           <nav>
-            <ul class="menu menu--dark">
+            <ul class="menu">
               <li><a href="/">Home</a></li>
               <li><a href="/#portfolio">Portfólio</a></li>
               <li><a href="/#summary">Resumo</a></li>
               <li><a href="/#sobre-mim">Diferenciais</a></li>
-              <li><a href="/#contato">Contato</a></li>
+              <li><a href="/#contact">contact</a></li>
             </ul>
           </nav>
         </div>
@@ -189,6 +188,5 @@
         />
       </svg>
     </a>
-    <script src="script.js"></script>
   </body>
 </html>

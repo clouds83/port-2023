@@ -9,21 +9,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="style/reset.css" />
     <link rel="stylesheet" type="text/css" href="style/style.css" />
-    <link rel="stylesheet" type="text/css" href="style/wrd-style.css" />
+    <link rel="stylesheet" type="text/css" href="style/cp-style.css" />
 
-    <title>Weird Wear | Claudio Godoy</title>
+    <script defer src="/script/scripts.js"></script>
+    <script defer src="/script/fixedHeader.js"></script>
+
+    <title>Asset Management App | Claudio Godoy</title>
   </head>
-  <body class="case">
-    <header class="page-header wrd" id="header">
-      <div id="header-top" class="wrd">
+  <body class="case cp">
+    <header class="page-header" id="header">
+      <div id="header-top">
         <div class="container">
-          <a href="/" class="logo wrd">claudio | front-end</a>
-          <nav class="wrd">
+          <a href="/" class="logo">claudio | front-end</a>
+          <nav>
             <a href="#" class="button-md button-menu">
               <svg
                 viewBox="0 0 16 11"
@@ -55,16 +58,15 @@
                 </svg>
               </a>
               <li><a href="/">Home</a></li>
-              <li><a href="/#portfolio">Portfólio</a></li>
-              <li><a href="/#summary">Resumo</a></li>
-              <li><a href="/#sobre-mim">Diferenciais</a></li>
-              <li><a href="/#contato">Contato</a></li>
+              <li><a href="/#portfolio">Portfolio</a></li>
+              <li><a href="/#summary">Summary</a></li>
+              <li><a href="/#contact">Contact</a></li>
               <li>
                 <a
-                  href="curriculo-claudio-frontend.pdf"
+                  href="claudio-godoy-resume-front-end-developer.pdf"
                   target="_blank"
                   class="button-sm"
-                  >Currículo</a
+                  >Resume</a
                 >
               </li>
             </ul>
@@ -73,53 +75,47 @@
       </div>
 
       <div class="container">
-        <div class="hero-content wrd">
-          <div class="hero-left wrd">
-            <h1>Weird</h1>
-            <span class="sub-title">Loja virtual de moda alternativa</span>
+        <div class="hero-content">
+          <div class="hero-left">
+            <h1><i>Confidential Company</i></h1>
+            <span class="sub-title"> Android/iOS asset management app</span>
             <div class="data-wrapper">
               <div class="data-block">
-                <h2>Meu papel</h2>
-                <p>Branding, design e implementação</p>
+                <h2>My role</h2>
+                <p>Mobile Development</p>
               </div>
 
               <div class="data-block">
-                <h2>Tecnologias</h2>
-                <p>Woocommerce, WordPress</p>
+                <h2>Technologies</h2>
+                <p>React Native, TypeScript, Context API</p>
               </div>
-              <a
-                href="https://weirdwear.shop/"
-                target="_blank"
-                class="button-lg"
-                >visitar projeto</a
-              >
             </div>
           </div>
-          <div class="hero-right wrd">
-            <img src="img/wrd-hero.png" alt="" />
+          <div class="hero-right">
+            <img src="img/cp-hero.png" alt="" />
           </div>
         </div>
       </div>
     </header>
 
-    <main class="wrd">
-      <section class="concepcao">
+    <main>
+      <section class="overview">
         <div class="container">
-          <h1>visão geral</h1>
+          <h1>overview</h1>
           <p>
-            Trabalho freelance de loja virtual utilizando a plataforma de
-            e-commerce Woocommerce (WordPress). Fui responsável pelo design da
-            página, incluindo toda a identidade visual da marca, como a criação
-            do logotipo. Além disso, também realizei a implementação,
-            customização e configuração completa da loja na plataforma
-            utilizada.
+            Developed a sophisticated hybrid asset management application for
+            the largest retail conglomerate in Brazil. As the React Native
+            developer, I was the only responsible on the mobile development,
+            collaborating mainly with backend developers and the product team.
           </p>
         </div>
       </section>
 
       <section class="funcionalidades">
         <div class="container">
-          <img src="img/wrd-1.png" alt="" />
+          <img src="img/cp-1.png" alt="" />
+          <img src="img/cp-2.png" alt="" />
+          <img src="img/cp-3.png" alt="" />
         </div>
       </section>
     </main>
@@ -127,14 +123,13 @@
     <footer class="footer">
       <div class="container">
         <div class="upper-footer">
-          <a href="/" class="logo logo--dark">claudio | front-end</a>
+          <a href="/" class="logo">claudio | front-end</a>
           <nav>
-            <ul class="menu menu--dark">
+            <ul class="menu">
               <li><a href="/">Home</a></li>
-              <li><a href="/#portfolio">Portfólio</a></li>
-              <li><a href="/#summary">Resumo</a></li>
-              <li><a href="/#sobre-mim">Diferenciais</a></li>
-              <li><a href="/#contato">Contato</a></li>
+              <li><a href="/#portfolio">Portfolio</a></li>
+              <li><a href="/#summary">Summary</a></li>
+              <li><a href="/#contact">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -143,7 +138,7 @@
         </div>
       </div>
     </footer>
-    <a href="#header" class="back_to_top wrd" title="">
+    <a href="#header" class="back_to_top" title="">
       <svg
         width="19"
         height="15"
@@ -157,6 +152,5 @@
         />
       </svg>
     </a>
-    <script src="script.js"></script>
   </body>
 </html>
