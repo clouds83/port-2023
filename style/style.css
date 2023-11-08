@@ -1044,5 +1044,4 @@ section header {
 
 .astronaut {
   animation: floatAnimation 10s ease-in-out infinite;
-  position: absolute;
 }
