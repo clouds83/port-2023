@@ -45,6 +45,16 @@ body {
   overflow-x: clip;
   min-height: 100vh;
   justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.dark-cloud {
+  position: absolute;
+  bottom: -90px;
+  right: -920px;
+  transform: scale(1.5);
+  z-index: 0;
 }
 
 .page-header,
@@ -114,6 +124,7 @@ a {
   display: flex;
   flex-direction: column;
   height: 100%;
+  z-index: 20;
 }
 
 .case .overview {
@@ -275,15 +286,6 @@ nav a,
   justify-content: center;
   position: relative;
 }
-
-/* .hero-right svg {
-  z-index: 1;
-}
-
-.hero-right img {
-  width: calc(100% + 6rem);
-  margin-right: -6rem;
-} */
 
 .portfolio-button {
   display: flex;
@@ -909,7 +911,6 @@ section header {
 
   .hero-left {
     padding: 0;
-    /* position: relative; */
   }
 
   .home .hero-content .hero-left,
@@ -1026,22 +1027,26 @@ section header {
 
 @keyframes floatAnimation {
   0% {
-    transform: translate(0px, 0px) rotate(0deg);
+    transform: translate(0px, 0px);
   }
+
   25% {
-    transform: translate(-5px, -10px) rotate(2deg) scale(1.05);
+    transform: translate(0, 6px) rotate(1deg);
   }
+
   50% {
-    transform: translate(3px, 6px) rotate(0deg);
+    transform: translate(0, 0px);
   }
+
   75% {
-    transform: translate(-2px, -6px) rotate(-1deg) scale(1.05);
+    transform: translate(0px, -6px) rotate(1deg);
   }
+
   100% {
-    transform: translate(0px, 0px) rotate(0deg);
+    transform: translate(0px, 0px);
   }
 }
 
 .astronaut {
-  animation: floatAnimation 10s ease-in-out infinite;
+  animation: floatAnimation 6s linear infinite;
 }
