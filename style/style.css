@@ -43,7 +43,7 @@ body {
   flex-direction: column;
   background-color: var(--subtle);
   overflow-x: clip;
-  min-height: 100vh;
+  min-height: 100dvh;
   justify-content: center;
   overflow: hidden;
   position: relative;
@@ -53,6 +53,14 @@ body {
   position: absolute;
   bottom: -90px;
   right: -920px;
+  transform: scale(1.5);
+  z-index: 0;
+}
+
+.white-cloud {
+  position: absolute;
+  bottom: -130px;
+  left: -190px;
   transform: scale(1.5);
   z-index: 0;
 }
@@ -1007,22 +1015,8 @@ section header {
   }
 }
 
-@keyframes move {
-  0% {
-    transform: scale(1) translate(0, 0);
-  }
-
-  36% {
-    transform: scale(1.05, 0.95) translate(5%, 10%) rotate(20deg);
-  }
-
-  76% {
-    transform: scale(0.95, 1.05) translate(-5%, 10%) rotate(-60deg);
-  }
-
-  100% {
-    transform: scale(1) translate(0, 0);
-  }
+.astronaut {
+  animation: floatAnimation 6s linear infinite;
 }
 
 @keyframes floatAnimation {
@@ -1045,8 +1039,4 @@ section header {
   100% {
     transform: translate(0px, 0px);
   }
-}
-
-.astronaut {
-  animation: floatAnimation 6s linear infinite;
 }
