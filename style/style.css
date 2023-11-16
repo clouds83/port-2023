@@ -43,7 +43,8 @@ body {
   flex-direction: column;
   background-color: var(--subtle);
   overflow-x: clip;
-  min-height: 100dvh;
+  min-height: 100vh;
+  min-height: 100svh;
   justify-content: center;
   overflow: hidden;
   position: relative;
@@ -842,7 +843,8 @@ section header {
     align-items: center;
     justify-content: center;
     display: none;
-    height: 100dvh;
+    height: 100vh;
+    height: 100svh;
   }
 
   .button-sm {
