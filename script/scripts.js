@@ -22,3 +22,18 @@ window.addEventListener('scroll', () => {
     window.scrollY > document.documentElement.clientHeight / 2;
   goTopBtn.classList.toggle('back_to_top-show', shouldBeVisible);
 });
+
+// open clouds as we scroll down
+document.addEventListener('scroll', function () {
+  var scrollPosition = window.scrollY;
+  var heroHeight = window.innerHeight;
+
+  var scrollPercent = Math.min(scrollPosition / heroHeight, 1);
+
+  document.querySelector('.white-cloud').style.transform = `translateX(${
+    -scrollPercent * 100
+  }%)`;
+  document.querySelector('.dark-cloud').style.transform = `translateX(${
+    scrollPercent * 100
+  }%)`;
+});
